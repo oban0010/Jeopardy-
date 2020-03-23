@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#board{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+.category{
+    width: 33.3%;
+    text-align: center;
+}
+.title{
+    background: #3a3aca;
+    color: #fff;
+    font-size: 16px;
+    padding: 30px 0;
+    margin: 5px;
+    margin-top: 0;
+}
+.cell{
+    background:#030361;
+    color: rgb(213, 228, 4);
+    padding: 30px 0;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer
+    ;
+}
+
+#overlay{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: none;
+}
+
+.show{
+    display: block !important;
+   
+    
+}
+body{
+    position: relative;
+}
+#clue{
+    text-align: center;
+    color: #fff;
+    background: #3a3aca;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.responses{
+    background:#030361;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#answer{
+    top: 15%;
+    color: rgb(213, 228, 4);
+    font-size: 24px;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+#close{
+    bottom: 15%;
+    position: absolute;
+    background: rgb(187, 189, 196);
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 5px 0px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 120px;
+    outline: none;
+}
